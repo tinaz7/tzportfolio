@@ -83,6 +83,7 @@ h4 {
     text-align: justify;
 }
 
+
 .project-intro {
     margin-top:0;
     width: 50%;
@@ -90,6 +91,12 @@ h4 {
     margin-right: 2%;
     font-size: 14px;
     color: #30343f;
+}
+
+@media screen and (max-width: 600px) {
+  .project-intro {
+    display: none; /* Completely removes the element and its space */
+  }
 }
 
 .skills-meta {
