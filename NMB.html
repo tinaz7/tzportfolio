@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>METR2800 Robot</title>
+    <meta name="description" content="Portfolio showcasing major projects during my time at The University of Queensland." />
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://fonts.googleapis.com' rel='stylesheet'>
+</head>
+
+<body id="top"> 
+        <!-- The back-to-top button link -->
+        <a href="#top" class="back-to-top" aria-label="Back to Top">
+            &uarr; Top
+        </a>
+    <main>
+    
+        <section id="intro" class="intro">
+            <h1>Engineering Project Portfolio</h1>
+            <p><i>Tina (Shuting) Zheng</i></p>
+            <p style = "font-size: 14px; color: #30343f;">A small collection of my favourite projects as a final-year BE/ME Mechatronics student at UQ</p>
+        </section>
+        <section class="categories" style="text-align: center;">
+            <a class="cta" href="ProjectPortfolio.html#engineeringprojects"><b>Robotics Projects</b></a> | 
+            <a class="cta" href="ProjectPortfolio.html#industryprojects"><b>Industry Projects</b></a> | 
+            <a class="cta" href="ProjectPortfolio.html#researchprojects"><b>Other Projects</b></a> |
+            <a class="cta" href="ProjectPortfolio.html#skills"><b>Skills</b></a>
+        </section>
+ 
+        <section id="VomanDesign" class="projects container">
+            <h2 style = "text-align: center; font-size: 22=0px;">Forces in Motion: Combining muscle-sensing tools with wearable exoskeletons during human walking</h2>
+            <h3 style = "text-align: center;">Neuromuscular Biomechanics Lab, UQ School of Biomedical Sciences</h3>
+            <p><strong>Role:</strong> Master's Thesis Student</p>
+            <p><strong>Duration:</strong> January 2026 - Present </p>
+            <p><strong>Key skills:</strong> Signal Processing • MATLAB & R • Electromyography • UWB Radar • Motion Capture • B-mode Ultrasound</p>               
+            
+            <p>This is an ongoing project from my Master's placement with the Neuromuscular Biomechanics Lab at UQ, which although is still in progress, has already allowed me to apply my 
+                skills in a research context and taught me a lot about biomechanics and the musculoskeletal system. This study investigates the feasibility of implementing ultrawide-band 
+                radar as a sensing modality during exoskeleton-assisted locomotion.
+            </p>
+
+            <h4 style = "padding-top: 20px; text-align: center;"><b>Motivation</b></h4>
+
+            <div class="image-flex" style="gap: 50px;">
+                <div style="width: 70%; text-align: justify;">
+                    <p>Determining individual muscle forces is fundamentally important for many fields, as accurate estimations of musculoskeletal forces allow for 
+                        applications such as providing a real-time control signal for prosthetics that enhance or restore motor performance, prevention and detection of injury in sports, or for assessing 
+                        patient progression through a rehabilitation protocol [1, 2]. However, traditional methods involve invasive direct measurement which raises ethical concerns, or indirect 
+                        calculations with musculoskeletal models which introduce large assumptions [3, 4]. Therefore, non-invasive assessment of muscle force remains one of the grand challenges in 
+                        biomechanics [5].
+                    </p>
+                    <p >UWB radar has demonstrated potential as a non-invasive approach for quantifying in vivo musculoskeletal forces. However, the physiological mechanisms underlying UWB radar 
+                        signal changes are still largely unknown [6]. Consequently, interpretation of UWB radar signals from in vivo musculoskeletal applications requires further validation during
+                        muscle force production during more complex, dynamic conditions.
+                    </p>
+                </div>
+                
+                <div style="width: 25%;">
+                    <img width="100%" src="Pictures/NMBUWBRadar.jpg" alt="UWB Radar Setup" />
+                    <p style="font-size: small;">Representation of reflection coefficient (S11 and S22) and transmission coefficient (S21 and S12) signal paths. Adapted from [6].</p>
+                </div>
+                
+            </div>
+           
+            <h4 style = "padding-top: 20px; text-align: center;"><b>Project Overview</b></h4>
+            <div>
+                <p>
+                    This investigation explores the dynamic movement of the lower limbs during walking to examine relationships between musculoskeletal factors – in particular, 
+                    fascicle strain, strain rate, muscle force, and torque – and UWB radar signals. Walking will be performed on an instrumented treadmill under a range of controlled 
+                    conditions, including varying incline angles (0°, 5°), walking speeds (85%, 100%, and 115% of preferred walking speed (PWS)), and body-weight normalised assistive 
+                    exoskeleton torques provided to the ankle (0 and 0.15 Nm∙kg-1). <br><br>
+                    Since the exoskeleton provides ankle plantarflexion torque assistance, the lower limb muscles associated with the flexion of the ankle will be the primary focus of 
+                    the investigation, including the TA, MG, LG, and SOL. UWB radar signals will be acquired with Antenna 1 over the MG and Antenna 2 over the LG to capture electromagnetic 
+                    signal variations during dynamic walking. Data will be collected from twelve participants, and subsequently processed, to achieve two primary objectives:
+                </p>
+                <ol>
+                    <li>Decoupling musculoskeletal factors during walking under varying controlled conditions</li>
+                    <li>Identifying independent frequency-dependent relationships between musculoskeletal factors and UWB radar signal features</li>
+                </ol>
+            </div>
+
+            <section>
+                <h4 style = "padding-top: 20px; text-align: center;"><b>References</b></h4>
+                <ol>
+                    <li>Bird, C., et al., <i>Ultra-wideband radar to measure in vivo musculoskeletal forces.</i> 2025.</li>
+                    <li>Liu, J., et al., <i>Non-invasive Quantitative Assessment of Muscle Force Based on Ultrasonic Shear Wave Elastography.</i> Ultrasound in Medicine & Biology, 
+                        2019. <b>45</b>(2): p. 440-451.</li>
+                    <li>Huxley, A.F. and R. Niedergerke, <i>Structural Changes in Muscle During Contraction: Interference Microscopy of Living Muscle Fibres.</i> 
+                        Nature, 1954. <b>173</b>(4412): p. 971-973.</li>
+                    <li>Hill, A.V., <i>The heat of shortening and the dynamic constants of muscle.</i> Proceedings of the Royal Society of London. B. Biological Sciences, 1938. 
+                        <b>126</b>(843): p. 136-195.</li>
+                    <li>Hug, F., et al., <i>Elastography for Muscle Biomechanics: Toward the Estimation of Individual Muscle Force.</i> Exercise and Sport Sciences Reviews, 2015. 
+                        <b>43</b>(3): p. 125-133.</li>
+                </ol>
+
+            </section>
+            
+            <h2 style="text-align: center; padding-bottom: 40px;">More to come...</h2>
+
+            <div class="button-center">
+                <a href="ProjectPortfolio.html" class="detail-btn">
+                    &larr; Back to projects
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" style="border-top: #30343f solid 2px;" >
+        <div class="image-flex" style="justify-content: center; gap: 20px;">
+            <p style="margin: 0;">LinkedIn: <a href="https://www.linkedin.com/in/tinaszheng/" style="color: #30343f;" aria-label="LinkedIn profile">tinaszheng</a></p>
+            <p style="margin: 0;">Email: <a href="mailto:zhengtina105@gmail.com" style="color: #30343f;" aria-label="Email">zhengtina105@gmail.com</a></p>
+        </div>
+        <p>Tina Zheng - <i>Engineering Project Portfolio</i></p>
+    </footer>
+</body>
+</html>

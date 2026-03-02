@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>METR2800 Robot</title>
+    <meta name="description" content="Portfolio showcasing major projects during my time at The University of Queensland." />
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://fonts.googleapis.com' rel='stylesheet'>
+</head>
+
+<body id="top"> 
+        <!-- The back-to-top button link -->
+        <a href="#top" class="back-to-top" aria-label="Back to Top">
+            &uarr; Top
+        </a>
+    <main>
+    
+        <section id="intro" class="intro">
+            <h1>Engineering Project Portfolio</h1>
+            <p><i>Tina (Shuting) Zheng</i></p>
+            <p style = "font-size: 14px; color: #30343f;">A small collection of my favourite projects as a final-year BE/ME Mechatronics student at UQ</p>
+        </section>
+        <section class="categories" style="text-align: center;">
+            <a class="cta" href="ProjectPortfolio.html#engineeringprojects"><b>Robotics Projects</b></a> | 
+            <a class="cta" href="ProjectPortfolio.html#industryprojects"><b>Industry Projects</b></a> | 
+            <a class="cta" href="ProjectPortfolio.html#researchprojects"><b>Other Projects</b></a> |
+            <a class="cta" href="ProjectPortfolio.html#skills"><b>Skills</b></a>
+        </section>
+ 
+        <section id="METR4810_robot" class="projects container">
+            <h2 style = "text-align: center;">Autonomous Coffee Bean Harvester</h2>
+            <h3 style = "text-align: center;">Mechatronics System Design II</h3>
+            <p><strong>Final Rank:</strong> High Distinction </p>
+            <p><strong>Duration:</strong> July 2024 - November 2024 </p>
+            <p><strong>Key skills:</strong> CAD • FEA • Python • Electronics • Project management • Manufacturing Techniques</p>               
+
+            <p style = "text-align: justify;">In Mechatronics System Design II (METR4810), we were tasked to create an autonomous harvester to traverse through a 2 x 2 x 0.1 m sand pit, 
+                locate coffee bean deposits, and extract it from beneath the surface to be collected at a delivery point. This project was completed in a team of four, where I specialised 
+                in the mechanical subsystem to develop both the <a class="cta" href="#drive">drive subsystem</a> and the <a class="cta" href="#harvesting">harvesting subsystem</a>. 
+                Our final prototype achieved one of the highest demonstration scores in the cohort (93%).
+            </p>
+            <div class="image-flex" style="justify-content: center; gap: 50px;">
+                <img width="40%" src="Pictures/METR4810Robot_cover.jpg" alt="METR4810 Robot Front" />
+                <img width="50%" src="Pictures/METR4810CAD.PNG" alt="METR4810 Robot Back" />
+            </div>
+            
+            <h4 style = "padding-top: 40px; text-align: center;" id="drive"><b>Drive Subsystem</b></h4>
+            <div class="image-flex" style="padding: 30px 0 0 0; gap: 40px;">
+                <p style="text-align: justify;">My first challenge was selecting an appropriate drive system for traversing sand. After reviewing literature and comparing different mechanisms, 
+                    tracks were identified as the most effective solution, enabling a simple two-motor differential drive. 
+                </p>
+                <img width="50%" src="Pictures/METR4810TreadDesign.jpg" alt="METR4810 Tread Design" />
+            </div>
+
+            <div class="image-flex" style="gap: 40px; padding-top: 10px;">
+                <div>
+                    <p style="text-align: justify;">Through testing and iterative design, I developed treads with a pronounced pattern to maximise surface area and grip, while maintaining a wide
+                         profile to distribute the robot’s weight over the sand. This resulted in a reliable drive system that maintained sufficient traction while effectively preventing sinking.</p>
+                    <div style="text-align: center;">
+                        <img width="50%" src="Pictures/METR4810TreadDesign2.jpg" alt="METR4810 Tread Design 2" />
+                    </div>
+                </div>
+                <img width="25%" src="Pictures/METR4810Treads.jpg" alt="METR4810 Treads" />
+            </div>
+
+            <h4 style = "padding-top: 40px; text-align: center;" id="harvesting"><b>Harvesting Subsystem</b></h4>
+            <div class="image-flex" style="gap: 20px; padding-top: 10px;">
+                <p style="text-align: justify;">The collection mechanism was actuated with a DC motor and a partial gear. This was to increase the available torque for the motor, 
+                    as well as decrease the rotational speed for more accurate control. The gear ratio also allows the axis of rotation to be as close to the hopper as possible without shifting 
+                    the motor close to the hopper, which would contribute to the back-heavy weight imbalance. 
+                </p>
+                <img width="25%" src="Pictures/METR4810CollectionDesign.jpg" alt="METR4810 Collection Design" />
+                <img width="25%" src="Pictures/METR4810Collection.jpg" alt="METR4810 Collection" />
+            </div>
+            <div class="image-flex" style="gap: 20px; padding-top: 10px;">
+                <p style="text-align: justify;">As the system traverses through the sand, the hopper arm is pushed beneath the surface of the sand to collect the coffee beans. The arms
+                    were also equipped with small bearings so that the arms can be lowered into the sand without the risk of jamming on the base of the sandpit. As the harvesting arms rotate 
+                    upwards, the coffee beans are then deposited into the hopper, which was designed to funnel the coffee beans into the delivery point.
+                </p>
+                <img width="30%" src="Pictures/METR4810HopperArm.jpg" alt="METR4810 Hopper Arm" /> 
+                <div width = "24%" style="display: flex; flex-direction: column;">
+                    <img width="100%" src="Pictures/METR4810Hopper.jpg" alt="METR4810 Hopper" />
+                    <img width="100%" src="Pictures/METR4810Hopper2.PNG" alt="METR4810 Hopper 2" />
+                </div>
+            </div>
+            <div class="image-flex" style="gap: 20px; padding-top: 10px;">
+                <div style="display: flex; flex-direction: column;">
+                    <p style="text-align: justify;">The localisation system used ArUco markers, which were attached to the roof of the system. By placing ArUco markers on the system and 
+                    around the sand pit, computer vision was used to locate the system and guide it along a pre-determined path.
+                    </p>
+                    <div class="image-flex" style="gap: 20px;">
+                        <img width="40%" src="Pictures/METR4810Localisation.JPG" alt="METR4810 Localisation" />
+                        <img width="55%" src="Pictures/METR4810Sandpit.JPG" alt="METR4810 Sandpit" />
+
+                    </div>
+                </div>
+                <img width="30%" src="Pictures/METR4810Roof.jpg" alt="METR4810 ArUco Roof" />
+                
+            </div>
+
+            <p><br></p>
+            <div class="image-flex" style="gap: 20px;">
+                <img width="20%" src="Pictures/METR4810BoxDesign.PNG" alt="METR4810 Box Design" />
+                <img width="22%" src="Pictures/METR4810Box.jpg" alt="METR4810 Box" />
+                <div>
+                    <p style="text-align: justify;">This design also utilised the following components:</p>
+                    <ul>
+                        <li>Raspberry Pi Zero 2 microcontroller</li>
+                        <li>Continuous servos</li>
+                        <li>Limit Switches</li>
+                        <li>Reversible encoder DC motors</li>
+                        <li>Manufactured aluminium gears</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="image-flex" style="gap: 20px;">
+                <div>
+                    <p>Additionally, <strong> key skills</strong> were developed in:</p>
+                    <ul>
+                        <li><b>CAD Modelling:</b> Autodesk Inventor and AutoCAD, with extensive practice in assemblies and constraints</li>
+                        <li><b>Mechanical Design & Analysis:</b> designing functional mechanisms under space and power constraints through manual calculations and FEA</li>
+                        <li><b>Manufacturing Techniques:</b> acrylic and fibre laser cutters, press brake machines, and 3D printing</li>
+                        <li><b>Electronics & Assembly:</b> soldering, circuit assembly, and hardware troubleshooting</li>
+                        <li><b>Programming:</b> Python</li>
+                    </ul>
+                </div>
+                <img width="30%" src="Pictures/METR4810FEA.jpg" alt="METR4810 FEA" />
+            </div>
+            <div class="button-center">
+                <a href="ProjectPortfolio.html" class="detail-btn">
+                    &larr; Back to projects
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" style="border-top: #30343f solid 2px;" >
+        <div class="image-flex" style="justify-content: center; gap: 20px;">
+            <p style="margin: 0;">LinkedIn: <a href="https://www.linkedin.com/in/tinaszheng/" style="color: #30343f;" aria-label="LinkedIn profile">tinaszheng</a></p>
+            <p style="margin: 0;">Email: <a href="mailto:zhengtina105@gmail.com" style="color: #30343f;" aria-label="Email">zhengtina105@gmail.com</a></p>
+        </div>
+        <p>Tina Zheng - <i>Engineering Project Portfolio</i></p>
+    </footer>
+</body>
+</html>

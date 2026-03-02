@@ -1,0 +1,148 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto; 
+}
+
+h1 {
+    color: #1b2021;
+}
+h2 {
+    margin-top: 50px;
+    color: #1b2021;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #1b2021;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-style: italic;
+    color: #30343f;
+}
+.cta {
+    color: #ea638c;
+}
+
+.left-align {
+    text-align: left !important;
+}
+
+.right-align {
+    text-align: right !important;
+}
+
+.right-align {
+    text-align: center !important;
+}
+
+.intro {
+    text-align: center;
+    background-color: #ffeded;
+    padding: 5px;
+    border-bottom: #30343f solid 2px;
+}
+
+.categories {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffd9da;
+    border-bottom: #30343f solid 2px;
+}
+
+
+.project-image {
+    width:20%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-flex {
+    display: flex;
+    align-items: center;
+}
+
+.image-flex.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-text-left {
+    margin-top: 0;
+    text-align: justify;
+}
+.image-text-right {
+    margin-top: 0;
+    text-align: justify;
+}
+
+.project-intro {
+    margin-top:0;
+    width: 50%;
+    margin-left:2%;
+    margin-right: 2%;
+    font-size: 14px;
+    color: #30343f;
+}
+
+.skills-meta {
+    color: #30343f;
+}
+
+.detail-btn {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    border-style: outset;
+    background-color: #ffd9da;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ea638c;
+}
+
+
+.back-to-top {
+    position: fixed; 
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    
+    border-style: outset;
+    background-color: #ffd9da;
+    color: #ea638c;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 99; 
+    display: block; 
+    font-weight: bold;
+}
+
+.button-center {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.site-footer {
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #ffd9da;
+    text-align: center;
+    color: #30343f;
+}
+
+html {
+    scroll-behavior: smooth;
+}

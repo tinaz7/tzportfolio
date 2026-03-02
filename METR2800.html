@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>METR2800 Robot</title>
+    <meta name="description" content="Portfolio showcasing major projects during my time at The University of Queensland." />
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://fonts.googleapis.com' rel='stylesheet'>
+</head>
+
+<body id="top"> 
+        <!-- The back-to-top button link -->
+        <a href="#top" class="back-to-top" aria-label="Back to Top">
+            &uarr; Top
+        </a>
+    <main>
+    
+        <section id="intro" class="intro">
+            <h1>Engineering Project Portfolio</h1>
+            <p><i>Tina (Shuting) Zheng</i></p>
+            <p style = "font-size: 14px; color: #30343f;">A small collection of my favourite projects as a final-year BE/ME Mechatronics student at UQ</p>
+        </section>
+        <section class="categories" style="text-align: center;">
+            <a class="cta" href="ProjectPortfolio.html#engineeringprojects"><b>Robotics Projects</b></a> | 
+            <a class="cta" href="ProjectPortfolio.html#industryprojects"><b>Industry Projects</b></a> | 
+            <a class="cta" href="ProjectPortfolio.html#researchprojects"><b>Other Projects</b></a> |
+            <a class="cta" href="ProjectPortfolio.html#skills"><b>Skills</b></a>
+        </section>
+ 
+        <section id="METR2800_robot" class="projects container">
+            <h2 style = "text-align: center;">Autonomous Vessel Collection and Deposit Prototype</h2>
+            <h3 style = "text-align: center;">METR2800 Version</h3>
+            <p><strong>Final Mark:</strong> High Distinction </p>
+            <p><strong>Duration:</strong> February 2023 - June 2023 </p>
+            <p><strong>Key skills:</strong> CAD • Arduino IDE (C/C++) • Electronics • Project management • Manufacturing Techniques</p>
+
+            <p style = "text-align: justify;">This project began as a course project for the Mechatronics System Design Project I (METR2800), and involved the design and development 
+                of an autonomous system that can collect fuel vessels (tennis balls) and oxidiser vessel (squash balls), and depositing each in their respective silos without simultaneous 
+                contact with different types of vessels. Although this was the first hands-on robotics project my three team members and I had ever undertaken, we were able to achieve the
+                the best performance of the 2023 METR2800 cohort, allowing us to represent UQ in the <a class="cta" href="Warman.html">International Finals</a> of the Warman Design & Build Challenge.
+            </p>
+
+            <div class="image-flex" style="justify-content: center; gap: 100px;">
+                <img width="50%" src="Pictures/METR2800Rig.jpg" alt="METR2800 Rig" />
+                <img width="30%" src="Pictures/METR2800Robot_cover.jpg" alt="METR2800 Robot" />
+            </div>
+
+            <div class="image-flex" style="padding: 30px 0 0 0; gap: 20px;">
+                <p style="text-align: justify;">The main engineering challenge of my subsystem, the mechanical subsystem, was developing a pulley system capable of extending the robot’s 
+                arm from 380 mm to 980 mm, allowing it to meet the initial 400 × 400 × 400 mm size constraint while still reaching the maximum silo distance without driving onto the raised 
+                platform of the rig. This was completed with a cylindrical pulley system made out of lightweight PVC pipes, aluminium rods, and 3d-printed connections, designed and manufactured by myself.
+                </p>
+                <img width="45%" src="Pictures/METR2800Rod.jpg" alt="METR2800 Rod Design" />
+            </div>
+
+            <div class="image-flex" style="gap: 20px;">
+                <img width="40%" src="Pictures/METR2800Components.jpg" alt="METR2800 Components" />
+                <div>
+                    <p style="text-align: justify;">This design also utilised the following components:</p>
+                    <ul>
+                        <li>Meccanum wheels for omnidirectional mobility</li>
+                        <li>Arduino Mega microcontroller</li>
+                        <li>Worm gear and reversible DC motors</li>
+                        <li>Ultrasonic distance sensors for closed-loop system implementation</li>
+                        <li>Manufactured acrylic rack and pinion linear actuation mechanisms</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p style="text-align: justify;">Although the performance of this robot was suboptimal, collecting 6 balls but only depositing 5 in just over a minute, 
+                it was important to experience the <strong>Design &rarr; Implement &rarr; Validation</strong> process. 
+            </p>
+            <div class="image-flex" style="gap: 20px;">
+                <div>
+                    <p>The project also equipped me with new <strong>skills</strong>:</p>
+                    <ul>
+                        <li><b>CAD Modelling:</b> Siemens NX, Autodesk Inventor, and AutoCAD</li>
+                        <li><b>Mechanical Design & Analysis:</b> designing lightweight, functional mechanisms under space and power constraints</li>
+                        <li><b>Manufacturing Techniques:</b> acrylic and fibre laser cutters, press brake machines, and 3D printing</li>
+                        <li><b>Electronics & Assembly:</b> soldering, circuit assembly, and hardware troubleshooting</li>
+                        <li><b>Programming:</b> Arduino IDE (C/C++)</li>
+                        <li><b>Project Management & Documentation:</b> Gantt charts, risk analysis, and project management plans</li>
+                    </ul>
+                </div>
+                <img width="20%" src="Pictures/METR2800PCB.jpg" alt="METR2800 PCB" />
+            </div>
+
+            <div class="button-center">
+                <a href="ProjectPortfolio.html" class="detail-btn">
+                    &larr; Back to projects
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" style="border-top: #30343f solid 2px;" >
+        <div class="image-flex" style="justify-content: center; gap: 20px;">
+            <p style="margin: 0;">LinkedIn: <a href="https://www.linkedin.com/in/tinaszheng/" style="color: #30343f;" aria-label="LinkedIn profile">tinaszheng</a></p>
+            <p style="margin: 0;">Email: <a href="mailto:zhengtina105@gmail.com" style="color: #30343f;" aria-label="Email">zhengtina105@gmail.com</a></p>
+        </div>
+        <p>Tina Zheng - <i>Engineering Project Portfolio</i></p>
+    </footer>
+</body>
+</html>
