@@ -97,6 +97,9 @@ h4 {
   .project-intro {
     display: none; /* Completely removes the element and its space */
   }
+  .progress {
+    display: none;
+  }
 }
 
 .skills-meta {
